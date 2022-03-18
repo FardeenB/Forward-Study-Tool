@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="website.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    <title>Forward Study Tool</title>
+</head>
+
+<body>
+    <ul class="tabs">
+        <!-- Create a list for the tabs class -->
+
+
+        <!--Home tab is the default active tab -->
+        <li data-tab-target="#home" class="active tab">Home</li>
+
+        <!-- Other tabs are not active, but become active once clicked -->
+        <li data-tab-target="#timer" class="tab">Timer</li>
+        <li data-tab-target="#info" class="tab">Info</li>
+        <li data-tab-target="#account" class="tab">Account</li>
+    </ul>
+
+    <!--Give the tab-content to display each feature-->
+    <div class="tab-content">
+        <div-1 id="timer" data-tab-content>
+            <h1>Timer</h1>
+            <div class="center">
+                <embed type="text/html" src="/features/timer/timer.html" width="600" height="700">
+                </embed>
+            </div>
+        </div-1>
+
+        <!-- Tab class is active because "home" is the default being showed -->
+        <div-2 id="home" data-tab-content class="active">
+            <h1>Home</h1>
+            <p>Tip: Double click blocks to delete notes!</p>
+            <embed type="text/html" src="/features/notes/notes.html" width="600" height="500">
+            </embed>
+        </div-2>
+
+        <!-- Example of ebedding an htmk file within another html file. This is done for clarity and organization -->
+        <div-3 id="info" data-tab-content>
+            <h1>Info 🤔</h1>
+            <embed type="text/html" src="/features/info/info.html" width="600" height="500">
+            </embed>
+        </div-3>
+
+        <!-- Giving the 'account' id so that logic from a js file can be applied -->
+        <div-4 id="account" data-tab-content>
+            <h1>Account</h1>
+            <div id='sign-out'>Sign Out</div>
+        </div-4>
+</body>
+
+<!-- Linking js scripts at the bottom to ensure scripts are run after the html page has been displayed -->
+<script src="./website-tabs.js"></script>
+<script src="./website-sign-out.js"></script>
+
+</html>

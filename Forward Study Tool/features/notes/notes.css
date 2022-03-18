@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    background: #455350;
+}
+
+
+/* Styling the app id  */
+
+#app {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 24px;
+    gap: 24px;
+}
+
+.note {
+    height: 200px;
+    font-family: 'Josefin Sans', sans-serif;
+    box-sizing: border-box;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+    resize: none;
+    font-size: 16px;
+}
+
+.add-note {
+    height: 200px;
+    border: none;
+    outline: none;
+    background: #ffffff;
+    border-radius: 10px;
+    font-size: 120px;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.add-note:hover {
+    background: rgba(68, 62, 62, 0.924)
+}

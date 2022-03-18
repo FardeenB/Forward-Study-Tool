@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    width: 500px;
+    height: auto;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Button design */
+
+div {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 25%;
+    padding: 5px;
+    font-size: 2.5em;
+    background-color: black;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+
+/* Make the button interactive by hovering */
+
+div:hover {
+    background-color: black;
+    transform: translateX(-50%) scale(1.1);
+}

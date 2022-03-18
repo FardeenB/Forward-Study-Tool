@@ -1,0 +1,95 @@
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: block;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background: #dddddd;
+    margin: 24px;
+    padding: 0;
+    margin: 0;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid black;
+}
+
+.tab {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.tab.active {
+    background-color: #CCC;
+}
+
+.tab:hover {
+    background-color: #AAA;
+}
+
+.tab-content {
+    margin-left: 20px;
+    margin-right: 20px;
+    min-width: 600px;
+    min-height: 600px;
+}
+
+.tab-content div-4 h1 {
+    text-align: center;
+}
+
+.tab-content div-4 body {
+    width: 500px;
+    height: auto;
+}
+
+.tab-content div-4 center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Specifying the exact div that the this style should be applied */
+
+
+/* In this case the style is being applied to sign-out button to match the sign-in button's style */
+
+.tab-content div-4 div {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    padding: 5px;
+    font-size: 2.5em;
+    background-color: black;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.tab-content div-4 div:hover {
+    background-color: black;
+    opacity: 0.6;
+}
+
+.center {
+    text-align: center;
+    width: 100%;
+}
+
+.tab-content div-3 {
+    height: 90vh;
+}
